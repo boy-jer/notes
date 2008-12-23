@@ -1,0 +1,26 @@
+<div class="note_wrapper">
+<div class="tags">
+<%= 
+if @note.tags.blank? 
+"" 
+else 
+"(" + @note.tags.collect{|tag| tag.name}.join(", ") + ")" 
+end 
+%> 
+</div>
+<div class="note_description">
+<%= in_place_editor_field :note, :description, {},{:rows => 10, :cols => 37} %> 
+
+</div>
+
+<div id="files">
+<%= render(:partial => "file_listing", :collection => @note.note_files)%>
+</div>
+<div style="clear:both"></div>
+<%= form_remote_tag (:url=>{:action => 'add_file', :id => @note},:enctype => 'multipart/form-data',:update => 'files',:position => :top) %> 
+  <%= file_field 'note_file', 'file'  %> <%= submit_tag 'Add File' %></p>
+<%= end_form_tag %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @note %> |
+<%= link_to 'Back', :action => 'home' %>
+</div>

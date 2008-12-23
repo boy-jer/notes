@@ -1,0 +1,13 @@
+<% form_tag ({:action => 'add_file', :id => file_upload_control.id}, {:multipart=>true, :target=>'upload_target', :onsubmit=>"document.getElementById('spinner#{file_upload_control.id}').style.display='block';"}) do %> 
+  <div id="upload_controls<%=file_upload_control.id%>">
+   <img src="/images/indicator.gif" 
+alt="spinner" id="spinner<%=file_upload_control.id%>" 
+style="display:none;float:right"/>  
+    <%= file_field 'note_file', 'file', 
+{:class=>'upload_control', :size=>20, :id=>"uploader" + 
+file_upload_control.id.to_s}  %> 
+    <br />
+    <%= submit_tag 'Add File' %>
+  </div>
+<% end %>
+

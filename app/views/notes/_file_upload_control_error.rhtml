@@ -1,0 +1,21 @@
+<%= javascript_include_tag :defaults %>
+
+<% form_tag ({:action => 'add_file', :id => file_upload_control_error.id}, {:multipart=>true}) do %> 
+    <%= file_field 'note_file', 'file'  %> <%= submit_tag 'Add File' %>
+<% end %>
+
+<div id="file_wrapper<%=file_upload_control_error.note_files.last.id%>">
+  <%=
+  render :partial => 'file_listing', :object => file_upload_control_error.note_files.last
+  %>
+</div>
+<script>
+$(parent.document.getElementById('spinner<%=file_upload_control_error.id%>')).style.display = 'none';
+$(parent.document.getElementById('upload_controls<%=file_upload_control_error.id%>')).style.display = 'block';
+$(parent.document.getElementById('uploader<%=file_upload_control_error.id%>')).disabled 
+= false; 
+
+new Insertion.Top($(parent.document.getElementById('upload_controls<%=file_upload_control_error.id%>')),'<div id="error_<%=file_upload_control_error.id%>" class="error_message"><%=@error_message%></div>');
+
+window.setTimeout(function(){Effect.Fade(parent.document.getElementById('error_<%=file_upload_control_error.id%>'))}, 5000)
+</script>

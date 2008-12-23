@@ -1,0 +1,76 @@
+<div class="note <%=
+          begin 
+            color = note_listing.tags[0].color 
+          rescue 
+            color = 'yellow'
+          end 
+         %>" style="display:none" id="note<%=note_listing.id%>">  
+    <div style="display:none">
+      <div class="noteId"><%=note_listing.id%></div>
+      <div class="noteX"><%=note_listing.x%></div>s
+      <div class="noteY"><%=note_listing.y%></div>
+      <div class="noteZ"><%=note_listing.z%></div>
+    </div>
+    <div class="note_header">  
+      <div class="note_date">
+        <%= note_listing.date.strftime("%b %d, %Y").downcase %>
+      </div>
+      <div class="note_delete">
+        <%= link_to_remote '<img src="/images/buttonDelete.gif" alt="delete note" border="0" />', 
+                :url=>{ :action => 'destroy', :id => note_listing },
+                :loaded => "Notable.page.remove_note('note#{note_listing.id}')" 
+      %>    
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  <div class="inner_note" id="inner_note<%=note_listing.id%>">      
+        <a href="#" style="font-size:12px;" id="edit_descr<%=note_listing.id.to_s%>">Edit</a>
+  <div id="notedescr<%= note_listing.id %>" class="note_text">
+    <%= 
+      if !note_listing.description.nil? && note_listing.description > ""
+        RedCloth.new(note_listing.description).to_html   
+      else
+      end
+    %>
+  </div>
+  <%= notable_in_place_editor 'notedescr' + note_listing.id.to_s,             
+            :url=>{:controller=>'notes',:action=>'update_descr', :id=>note_listing},
+            :rows => 10, 
+            :highlightcolor => highlightcolor(color),
+            :highlightendcolor => highlightendcolor(color),
+                        :external_control => 'edit_descr'+note_listing.id.to_s,
+            :load_text_url =>{:controller=>'notes',:action=>'get_descr', :id=>note_listing}
+            %>  
+
+  <div id="files<%=note_listing.id%>" class="file_block">
+      <% if not note_listing.note_files.blank? %>
+        <%= render(:partial => "file_listing", :collection => note_listing.note_files)%>
+        <% end %>
+    <div style="clear:both"></div>
+  </div>
+  
+  <div class="tags">
+  <h3>Tags:</h3> 
+    <%= 
+    if note_listing.tags.blank? 
+      "<span id=\"tags#{note_listing.id}\">add tags to this note</span>" 
+    else 
+      "<span id=\"tags#{note_listing.id}\">" + note_listing.tags.collect{|tag| tag.name}.join(", ") + "</span>"
+    end 
+    %>  
+    </div>
+  <%= notable_in_place_editor 'tags' + note_listing.id.to_s,             
+            :url=>{:controller=>'notes',:action=>'add_tag', :id=>note_listing}, 
+            :cols=>37, 
+            :script=>true,
+            :highlightcolor => highlightcolor(color),
+            :highlightendcolor => highlightendcolor(color)
+                  %>
+  <%= link_to_function "add a file", "Notable.page.retrieve_note('note#{note_listing.id}').toggle_area('file_upload')", {:id=>"add_file_link_note#{note_listing.id}"} %>
+  <div id="add_file_note<%=note_listing.id%>" style="display:none">
+  <%=
+  render :partial => 'file_upload_control', :object => note_listing
+  %>
+  </div>
+  </div>
+</div>

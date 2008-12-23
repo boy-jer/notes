@@ -1,0 +1,13 @@
+<% form_tag "signup" do %>  
+  <fieldset>
+  <label for="user_login">Desired login:</label><br/>
+   <%= text_field "user", "login", :size => 20 %>
+  <label for="user_password">Choose password:</label><br/>
+  <%= password_field "user", "password", :size => 20 %>
+    <label for="user_password_confirmation">Confirm password:</label><br/>
+    <%= password_field "user", "password_confirmation", :size => 20 %>
+  <input type="submit" value="Signup" class="primary" /> <%= link_to "return to login in", {:action=>"login"}, {:class=>"account_link"} %>
+  </fieldset>
+<% end %>
+
+

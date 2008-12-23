@@ -1,0 +1,14 @@
+<h1>Editing note</h1>
+
+<%= start_form_tag ({:action => 'update', :id => @note}, :multipart => true ) %>
+  <%= render :partial => 'form' %>
+  <%= file_field 'note_file', 'file'  %></p>
+  <%= submit_tag 'Edit' %>
+
+
+<%= end_form_tag %>
+
+
+
+<%= link_to 'Show', :action => 'show', :id => @note %> |
+<%= link_to 'Back', :action => 'home' %>

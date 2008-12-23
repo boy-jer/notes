@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+  <title>notes</title>
+  <%= javascript_include_tag :defaults %> 
+  <%= javascript_include_tag "jquery", "curvycorners", "notable" %>
+  <%= stylesheet_link_tag 'notable' %>
+</head>
+<body>
+<div id="center">
+  <div id="account_box">
+    <% if error_messages_for('user') != "" %>
+      <div class="signup_message" style="">
+           <%= error_messages_for 'user' %>
+      </div>
+    <% end %>
+
+    <% if @message %>
+      <div class="login_message" style="">  
+        <%= @message %>
+      </div>   
+    <% end %>
+    <h1 style="margin:10px 0 0 0;padding:0px;">notes</h1>
+    <div id="account_form">
+      <%= @content_for_layout %>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<% form_tag :action=> "login" do %>
+<fieldset>
+      <label for="user_login">Login:</label><br/>
+      <input type="text" name="user_login" id="user_login" size="20" value=""/><br/>
+
+       <label for="user_password">Password:</label><br/>
+      <input type="password" name="user_password" id="user_password" size="20"/>
+
+      <input type="submit" class="account_button" name="login" value="Login" class="primary" /><%= link_to "Sign Up", {:action=>'signup'},{:class=>'account_link'} %>
+</fieldset>
+<% end %>

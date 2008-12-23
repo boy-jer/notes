@@ -1,0 +1,12 @@
+<div class="notes_block" id="notes_block">
+<% 
+if !@notes.nil? then
+%>
+<%= render(:partial => 'note_listing', :collection=> @notes) %>
+<% 
+end 
+%>
+</div>
+
+
+

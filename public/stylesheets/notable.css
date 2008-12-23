@@ -1,0 +1,504 @@
+/****************************
+DEFAULTS
+*****************************/
+*{
+font-family:helvetica, sans-serif;
+}
+
+html, body{
+margin:0px;
+padding:0px;
+height: 100%;
+text-align: center;
+background:#fff;
+}
+
+ul{
+margin-left:1.5em;
+}
+
+a{
+text-decoration:none;
+color:#000;
+}
+/****************************
+STRUCTURE
+*****************************/
+
+div#container
+{
+margin-left: 10%; 
+margin-right: 10%;
+text-align:left;
+}
+
+
+
+/****************************
+ACCOUNT
+*****************************/
+
+
+#center{
+    position:absolute;
+    height:300px;
+    width:400px;
+    left: 50%;
+        top :15%;
+        margin-left: -200px;  /* half of width */
+}
+
+#account_box{
+    position:relative;
+    margin:0 0 0 0;
+    width:400px;
+    xheight:300px;
+    color:#000;
+    text-align:center;
+}
+
+
+#account_box h1{
+  font-size:32px;
+}
+
+
+div#account_form{
+  margin:auto;
+  text-align:left;
+  width:225px;
+  font-family: helvetica, sans-serif;
+}
+
+
+#account_box input{
+  font-size:18px;
+  margin:2px;
+}
+
+#account_box label{
+  font-size:16px;
+  position:relative;top:3px;
+}
+
+#account_box label{
+  line-height:1.5em
+}
+
+.account_button{
+  margin:10px 0;
+}
+
+
+
+fieldset{
+  border:0px solid #000;
+}
+
+legend{
+  color:#000;
+}
+
+.login_message{
+background:#ffffcc;
+color:#000;
+padding:3px;
+font-size:14px;
+text-align:center;
+margin-bottom:10px;
+}
+
+.signup_message{
+background:#ffffcc;
+color:#000;
+padding:3px;
+font-size:14px;
+text-align:left;
+margin-bottom:10px;
+}
+
+a.account_link{
+font-size: .75em;
+line-height :1em;
+margin-left:10px;
+color:#000;
+padding:3px;
+text-decoration:none;
+}
+
+a.account_link:hover{
+font-size:.75em;
+line-height:1em;
+padding:3px;
+text-decoration:none;
+}
+
+.fieldWithErrors input{
+  background:#ffffcc;
+  padding:0px; margin:0px;
+}
+
+#errorExplanation{
+margin:10px;
+font-size:14px;
+}
+
+#errorExplanation h2{
+font-size:1.25em;
+margin-bottom:2px;
+}
+
+
+/****************************
+NAVIGATION
+*****************************/
+div.navigation{
+float:right;
+font-size:.75em;
+font-weight:bold;
+margin-top:7px;
+padding-right:10px;
+color:#000;
+}
+
+
+div.navigation a{
+color:#000;
+text-decoration:none;
+}
+
+/****************************
+HEADER
+*****************************/
+div.header{
+float:left;
+text-align:left;
+
+background:#fff;
+width:100%;
+}
+
+
+h1.logo{
+float:left;
+padding-left:5px;
+margin:0px;
+color:#000;
+font-size:1.15em;
+line-height:1.85em;
+width:75%;
+}
+
+/****************************
+CONTROLS
+*****************************/
+.controls{
+  font-size:14px;
+  position:absolute;
+  left:5px;
+}
+
+.controls a{
+  color:blue;
+}
+
+
+.error_message{
+  color:#fff;
+  padding:2px;
+  margin:2px;
+  background:red;
+  text-align:center;
+  font-weight:bold;
+}
+
+div.search{
+padding: 10px 0 5px 0;
+background:#fff;
+color:#000;
+font-size:12px;
+position:relative;
+}
+
+.cloud{
+  font-size:10px;
+  margin:0 0 0 196px;
+  text-align:left;
+  width:300px;
+}
+
+.cloud a{
+  color:#aaa;
+}
+
+.cloud a:hover{
+  color:#000;
+}
+
+.search_form input, .search_form a{
+font-size:1.5em;
+text-decoration:none;
+}
+
+
+/****************************
+NOTE
+*****************************/
+
+
+.note{
+text-align:left;
+width:325px;
+overflow-x: hidden;
+background:#ffffcc;
+font-size:.85em;
+position:absolute;
+top:100px;
+left:50px;
+z-index:9999;
+border:1px solid #000;
+}
+
+.yellow{
+  background:#ffffcc;
+}
+
+.red{
+  background:#ffcccc;    
+}
+
+.blue{
+  background:#ccffff;  
+}
+
+.green{
+  background:#ccffcc;
+}
+
+.note a{
+  color:blue;
+}
+
+.note a:hover{
+  background:transparent;
+}
+
+.note img.thumb{
+border:3px solid #fff;
+}
+
+.note_header{
+font-size:1px;
+background:#ffff66;
+border-bottom:#ffff00 1px solid;
+height:17px;
+cursor:move;
+}
+
+.red .note_header{
+  background:#ff6666;    
+  border-bottom:#ff0000 1px solid;
+}
+
+.blue .note_header{
+  background:#66ffff;  
+  border-bottom:#00ffff 1px solid;
+}
+
+.green .note_header{
+  background:#66ff66;
+  border-bottom:#00ff00 1px solid;
+}
+
+
+
+
+div.note_date{
+float:left;
+font-size:14px;
+line-height:17px;
+font-weight:bold;
+width:300px;
+padding:1px 0px 1px 2px;
+color:#000;
+}
+
+div.note_text{
+margin-bottom:3px;
+margin-left:6px;
+font-size:1em;
+}
+
+.note textarea{
+font-size:1em;
+outline:none;
+}
+
+div.note_text ul{
+  padding-left:5px;
+  margin-top:.25em;
+}
+
+div.note_delete{
+float:left;
+width:20px;
+text-align:right;
+}
+
+div.note_delete a:hover{
+background:url();
+}
+
+
+
+.note_controls {
+text-align:right;
+margin-right:0px;
+}
+
+.editor_field
+{
+border:0px solid #fff;
+overflow:auto;
+text-align:left;
+width:97%;
+}
+
+.yellow .editor_field{
+  background:#ffffcc;
+}
+
+.red .editor_field{
+  background:#ffcccc;    
+}
+
+.blue .editor_field{
+  background:#ccffff;  
+}
+
+.green .editor_field{
+  background:#ccffcc;
+}
+
+
+
+.file_listing{
+width:100px; 
+float:left;
+margin:5px;
+}
+
+.inner_note{
+margin:10px;
+}
+
+div.tags{
+color:black;
+margin: 5px 0px 5px 0px;
+padding-top:3px;
+border-top:1px dotted #ccc;
+}
+
+div.tags h3{
+margin:0px;
+padding:0px;
+color:#525552;
+font-size:1em;
+}
+
+
+/****************************
+FILES
+*****************************/
+.file{
+float:left;
+}
+
+.file a:hover{
+background:url();
+}
+
+.upload_control{
+}
+
+/****************************
+FILES
+*****************************/
+div.help_header{
+background:#FFFF66;
+padding:5px;
+color:#000;
+}
+
+div.help_header h1{
+  color:#000;
+  font-size:1.5em;
+  margin:0px;
+  float:left;
+  width:50%;
+}
+
+div#close_help{
+  font-weight:bold;
+  font-size:.85em;
+  width:50%;
+  float:right;
+  text-align:right;
+}
+
+.help{
+padding:5px;
+font-size:.85em;
+line-height:1.5em;
+}
+
+.help h2{
+  margin:10px 0px 5px 0px;
+  padding:0px;
+  font-size:1.35em;
+  color:blue;
+}
+
+.help p{
+  padding:0px;
+  font-size:1.1em;
+  margin:5px 0 0 0;
+}
+
+.help ul{
+  margin:0 0 0 2em;
+  padding:0px;
+}
+
+/************************************************
+Settings
+************************************************/
+#settings_container{
+  padding-top:20px;
+}
+
+.tag_setup{
+  margin:auto;
+  border:1px #fff solid;
+  padding:20px 0px 20px 20px;
+}
+
+.tag_setup table{
+  margin-left:10px;
+  width:400px;
+}
+
+.tag_setup table th{
+  text-align:left;
+  background:#aaa;
+  color:#fff;
+  padding:5px;
+  border-bottom:1px solid #fff;
+}
+
+.tag_setup table td{
+  text-align:left;
+  background:#eee;
+  padding:5px;
+  border-bottom:1px dotted #aaa;
+}

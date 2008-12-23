@@ -1,0 +1,41 @@
+first:
+    id: 1
+    taggable_id: 1
+    user_id: 1000001
+    tag_id: 1
+    taggable_type: "Note"
+    
+second:
+    id: 2
+    taggable_id: 1
+    user_id: 1000001
+    tag_id: 2
+    taggable_type: "Note"
+        
+third:
+    id: 3
+    taggable_id: 1
+    user_id: 1000001
+    tag_id: 3
+    taggable_type: "Note"
+    
+fourth:
+    id: 4
+    taggable_id: 2
+    user_id: 1000001
+    tag_id: 3
+    taggable_type: "Note"
+    
+fifth:
+    id: 5
+    taggable_id: 2
+    user_id: 1000001
+    tag_id: 4
+    taggable_type: "Note"
+    
+sixth:
+    id: 6
+    taggable_id: 1
+    user_id: 1000001
+    tag_id: 5
+    taggable_type: "Note"

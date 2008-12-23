@@ -1,0 +1,24 @@
+  <div class="tag_setup">
+    <table cellpadding="0" cellspacing="0">
+    <tr>
+      <th>Tag Name</th>
+      <th>Assigned Color</th>
+      <th>Notes Tagged</th>
+    </tr>
+    <% @tags.each do |tag_item| %>
+    <tr>
+      <td><%=tag_item%></td>
+      <td>
+        <% form_for :tag, tag_item, :url=>{:controller=>"account", :action=>"update_color", :tag_id=>tag_item.id } do |f|%>
+          <%=f.select :color, {:yellow=>"yellow", :green=>"green", :red=>"red", :blue=>"blue"}, {}, {:style=>"width:100px", :onchange=>"this.form.submit()"}%>
+        <%end%>
+      </td>
+      <td>
+        <%= tag_item.taggings.length %>
+      </td>
+    </tr>
+
+    
+    <% end %>
+    </table>
+  </div>

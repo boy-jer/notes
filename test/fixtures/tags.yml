@@ -1,0 +1,19 @@
+important:
+    id: 1
+    name: "important"
+
+new:
+    id: 2
+    name: "new"
+
+urgent:
+    id: 3
+    name: "urgent"    
+
+travel:
+    id: 4
+    name: "travel"
+    
+cool:
+    id: 5
+    name: "cool"
