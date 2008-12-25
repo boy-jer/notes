@@ -1,4 +1,4 @@
-require 'rmagick'
+require 'RMagick'
 class NoteFile < ActiveRecord::Base
   belongs_to :note
   before_destroy :remove_file  

@@ -10015,3 +10015,1345 @@ Processing NotesController#update_position (for 127.0.0.1 at 2008-12-23 17:18:30
   [4;35;1mNote Update (0.4ms)[0m   [0mUPDATE "notes" SET "y" = 57, "x" = 315, "z" = 3 WHERE "id" = 72[0m
   [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
 Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=315&y=57&z=3&_=]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2008-12-24 16:10:19) [GET]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2008-12-24 16:10:20) [GET]
+
+
+Mysql::Error (Unknown database 'wnotes_development'):
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/mysql_adapter.rb:548:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/mysql_adapter.rb:548:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/mysql_adapter.rb:198:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/mysql_adapter.rb:74:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/mysql_adapter.rb:74:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:121:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:113:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (33.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (1.0ms)
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing NotesController#index (for 127.0.0.1 at 2008-12-24 16:11:43) [GET]
+Redirected to actionlogincontroller/account
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2008-12-24 16:11:43) [GET]
+Rendering template within layouts/account
+Rendering account/login
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://localhost/account/login]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2008-12-24 16:11:49) [POST]
+  Parameters: {"user_login"=>"will", "user_password"=>"r1chmond", "login"=>"Login"}
+  [4;36;1mUser Load (19.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'will' AND password = '4093124825fda27ea9db8de76c4c06b66d2d7146') LIMIT 1[0m
+Redirected to /
+Completed in 27ms (DB: 19) | 302 Found [http://localhost/account/login]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2008-12-24 16:11:49) [GET]
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".user_id = 2) ORDER BY date desc, id desc[0m
+Rendering template within layouts/notes
+Rendering notes/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;35;1mNoteFile Load (0.4ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) [0m
+  [4;36;1mNote Load (0.5ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (2.2ms)
+Rendered notes/_file_upload_control (1.3ms)
+Rendered notes/_note_listing (1164.2ms)
+Completed in 1303ms (View: 1260, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:11:51) [GET]
+  Parameters: {"file_id"=>"7", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.4ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 7 AND ("note_files".note_id = 72)) [0m
+Completed in 26ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/7?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_4.jpg
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:11:53) [GET]
+  Parameters: {"x"=>"235", "y"=>"156", "z"=>"4", "id"=>"72", "_"=>""}
+  [4;35;1mNote Load (0.4ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.4ms)[0m   [0;1mUPDATE "notes" SET "y" = 156, "x" = 235, "z" = 4 WHERE "id" = 72[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 18ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=235&y=156&z=4&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:11:55) [GET]
+  Parameters: {"x"=>"151", "y"=>"116", "z"=>"5", "id"=>"72", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE "notes" SET "y" = 116, "x" = 151, "z" = 5 WHERE "id" = 72[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=151&y=116&z=5&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:11:57) [GET]
+  Parameters: {"x"=>"362", "y"=>"138", "z"=>"6", "id"=>"72", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 138, "x" = 362, "z" = 6 WHERE "id" = 72[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 88ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=362&y=138&z=6&_=]
+
+
+Processing NotesController#add_file (for 127.0.0.1 at 2008-12-24 16:12:17) [POST]
+  Parameters: {"commit"=>"Add File", "id"=>"72", "note_file"=>{"file"=>#<File:/var/folders/Hy/HyrUKwK4FcqPm+KRzRL5ok+++TI/-Tmp-/CGI.565.0>}}
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mNoteFile Create (0.3ms)[0m   [0mINSERT INTO "note_files" ("filetype", "note_id", "systempath", "filename") VALUES('image/jpeg', 72, 'will/72/', 'Photo_2.jpg')[0m
+  [4;36;1mNoteFile Load (0.5ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) ORDER BY note_files.id DESC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) ORDER BY note_files.id DESC LIMIT 1[0m
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) ORDER BY note_files.id DESC LIMIT 1[0m
+Rendered notes/_file_upload_control_done (8.5ms)
+Completed in 548ms (View: 199, DB: 2) | 200 OK [http://localhost/notes/add_file/72]
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:12:17) [GET]
+  Parameters: {"file_id"=>"8", "type"=>"thumb", "id"=>"72"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNoteFile Load (0.3ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files"."id" = 8 AND ("note_files".note_id = 72)) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/8?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_2.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:12:17) [GET]
+  Parameters: {"file_id"=>"8", "type"=>"thumb", "id"=>"72"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNoteFile Load (0.3ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files"."id" = 8 AND ("note_files".note_id = 72)) [0m
+Completed in 17ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/8?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_2.jpg
+
+
+Processing NotesController#add_file (for 127.0.0.1 at 2008-12-24 16:12:28) [POST]
+  Parameters: {"commit"=>"Add File", "id"=>"72", "note_file"=>{"file"=>#<File:/var/folders/Hy/HyrUKwK4FcqPm+KRzRL5ok+++TI/-Tmp-/CGI.565.0>}}
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mNoteFile Create (0.4ms)[0m   [0mINSERT INTO "note_files" ("filetype", "note_id", "systempath", "filename") VALUES('image/jpeg', 72, 'will/72/', 'Photo_6.jpg')[0m
+  [4;36;1mNoteFile Load (0.5ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) ORDER BY note_files.id DESC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) ORDER BY note_files.id DESC LIMIT 1[0m
+  [4;36;1mNote Load (0.5ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) ORDER BY note_files.id DESC LIMIT 1[0m
+Rendered notes/_file_upload_control_done (9.2ms)
+Completed in 82ms (View: 11, DB: 2) | 200 OK [http://localhost/notes/add_file/72]
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:12:29) [GET]
+  Parameters: {"file_id"=>"9", "type"=>"thumb", "id"=>"72"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNoteFile Load (0.3ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files"."id" = 9 AND ("note_files".note_id = 72)) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/9?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_6.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:12:29) [GET]
+  Parameters: {"file_id"=>"9", "type"=>"thumb", "id"=>"72"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNoteFile Load (0.3ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files"."id" = 9 AND ("note_files".note_id = 72)) [0m
+Completed in 17ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/9?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_6.jpg
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:12:31) [GET]
+  Parameters: {"x"=>"363", "y"=>"138", "z"=>"7", "id"=>"72", "_"=>""}
+  [4;36;1mNote Load (0.6ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.5ms)[0m   [0mUPDATE "notes" SET "x" = 363, "z" = 7 WHERE "id" = 72[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 97ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=363&y=138&z=7&_=]
+
+
+Processing NotesController#new (for 127.0.0.1 at 2008-12-24 16:12:33) [POST]
+  [4;35;1mNote Create (0.4ms)[0m   [0mINSERT INTO "notes" ("x", "date", "y", "z", "description", "color", "user_id", "favorite") VALUES(NULL, '2008-12-24 16:12:33', NULL, NULL, NULL, NULL, 2, NULL)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (12.2ms)
+Completed in 36ms (View: 18, DB: 1) | 200 OK [http://localhost/notes/new]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:12:35) [GET]
+  Parameters: {"x"=>"910", "y"=>"159", "z"=>"8", "id"=>"73", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 159, "x" = 910, "z" = 8 WHERE "id" = 73[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 17ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=910&y=159&z=8&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:13:18) [GET]
+  Parameters: {"x"=>"910", "y"=>"160", "z"=>"9", "id"=>"73", "_"=>""}
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.4ms)[0m   [0mUPDATE "notes" SET "y" = 160, "z" = 9 WHERE "id" = 73[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=910&y=160&z=9&_=]
+
+
+Processing NotesController#get_descr (for 127.0.0.1 at 2008-12-24 16:13:19) [POST]
+  Parameters: {"id"=>"73"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+Completed in 12ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/get_descr/73]
+
+
+Processing NotesController#update_descr (for 127.0.0.1 at 2008-12-24 16:13:24) [POST]
+  Parameters: {"id"=>"73", "value"=>" !http://farm3.static.flickr.com/2127/2063014002_4c4e555c48.jpg?v=0!"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE "notes" SET "description" = ' !http://farm3.static.flickr.com/2127/2063014002_4c4e555c48.jpg?v=0!' WHERE "id" = 73[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 17ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_descr/73]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:13:27) [GET]
+  Parameters: {"x"=>"679", "y"=>"45", "z"=>"10", "id"=>"73", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 45, "x" = 679, "z" = 10 WHERE "id" = 73[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=679&y=45&z=10&_=]
+
+
+Processing NotesController#get_descr (for 127.0.0.1 at 2008-12-24 16:13:30) [POST]
+  Parameters: {"id"=>"73"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/get_descr/73]
+
+
+Processing NotesController#update_descr (for 127.0.0.1 at 2008-12-24 16:14:15) [POST]
+  Parameters: {"id"=>"73", "value"=>"!http://farm3.static.flickr.com/2127/2063014002_4c4e555c48_m.jpg!\n\n*here is a cool picture I took of the brooklyn bridge*"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "description" = '!http://farm3.static.flickr.com/2127/2063014002_4c4e555c48_m.jpg!
+
+*here is a cool picture I took of the brooklyn bridge*' WHERE "id" = 73[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_descr/73]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:14:18) [GET]
+  Parameters: {"x"=>"83", "y"=>"121", "z"=>"11", "id"=>"73", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.5ms)[0m   [0mUPDATE "notes" SET "y" = 121, "x" = 83, "z" = 11 WHERE "id" = 73[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 18ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=83&y=121&z=11&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:14:20) [GET]
+  Parameters: {"x"=>"480", "y"=>"74", "z"=>"12", "id"=>"72", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 74, "x" = 480, "z" = 12 WHERE "id" = 72[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 14ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=480&y=74&z=12&_=]
+
+
+Processing NotesController#add_file (for 127.0.0.1 at 2008-12-24 16:14:47) [POST]
+  Parameters: {"commit"=>"Add File", "id"=>"72", "note_file"=>{"file"=>#<File:/var/folders/Hy/HyrUKwK4FcqPm+KRzRL5ok+++TI/-Tmp-/CGI.565.0>}}
+  [4;36;1mNote Load (0.7ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNoteFile Load (0.6ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) [0m
+Rendered notes/_file_listing (0.3ms)
+Rendered notes/_file_upload_control_error (6.6ms)
+Completed in 96ms (View: 77, DB: 1) | 200 OK [http://localhost/notes/add_file/72]
+
+
+Processing NotesController#new (for 127.0.0.1 at 2008-12-24 16:14:47) [POST]
+  [4;36;1mNote Create (324.0ms)[0m   [0;1mINSERT INTO "notes" ("x", "date", "y", "z", "description", "color", "user_id", "favorite") VALUES(NULL, '2008-12-24 16:14:47', NULL, NULL, NULL, NULL, 2, NULL)[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 74)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 74) [0m
+Rendered notes/_file_upload_control (0.8ms)
+Rendered notes/_note_listing (13.7ms)
+Completed in 856ms (View: 20, DB: 325) | 200 OK [http://localhost/notes/new]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:14:48) [GET]
+  Parameters: {"x"=>"287", "y"=>"65", "z"=>"13", "id"=>"72", "_"=>""}
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (107.1ms)[0m   [0mUPDATE "notes" SET "y" = 65, "x" = 287, "z" = 13 WHERE "id" = 72[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 129ms (View: 0, DB: 108) | 200 OK [http://localhost/notes/update_position/72?x=287&y=65&z=13&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:14:51) [GET]
+  Parameters: {"x"=>"853", "y"=>"161", "z"=>"14", "id"=>"74", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 74 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 161, "x" = 853, "z" = 14 WHERE "id" = 74[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/74?x=853&y=161&z=14&_=]
+
+
+Processing NotesController#destroy (for 127.0.0.1 at 2008-12-24 16:14:52) [POST]
+  Parameters: {"id"=>"74"}
+  [4;36;1mNote Load (0.5ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 74 AND ("notes".user_id = 2)) [0m
+  [4;36;1mTagging Load (0.1ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ("taggings".taggable_id = 74 AND "taggings".taggable_type = 'Note') [0m
+  [4;35;1mNoteFile Load (0.1ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 74) [0m
+  [4;36;1mNote Destroy (0.3ms)[0m   [0;1mDELETE FROM "notes" WHERE "id" = 74[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 20ms (View: 1, DB: 1) | 200 OK [http://localhost/notes/destroy/74]
+
+
+Processing NotesController#add_file (for 127.0.0.1 at 2008-12-24 16:15:15) [POST]
+  Parameters: {"commit"=>"Add File", "id"=>"72", "note_file"=>{"file"=>#<File:/var/folders/Hy/HyrUKwK4FcqPm+KRzRL5ok+++TI/-Tmp-/CGI.565.0>}}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mNoteFile Create (0.4ms)[0m   [0mINSERT INTO "note_files" ("filetype", "note_id", "systempath", "filename") VALUES('application/pdf', 72, 'will/72/', 'README.pdf')[0m
+  [4;36;1mNoteFile Load (0.6ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) ORDER BY note_files.id DESC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) ORDER BY note_files.id DESC LIMIT 1[0m
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) ORDER BY note_files.id DESC LIMIT 1[0m
+Rendered notes/_file_upload_control_done (8.2ms)
+Completed in 36ms (View: 10, DB: 2) | 200 OK [http://localhost/notes/add_file/72]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:15:21) [GET]
+  Parameters: {"x"=>"287", "y"=>"64", "z"=>"15", "id"=>"72", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.5ms)[0m   [0mUPDATE "notes" SET "y" = 64, "z" = 15 WHERE "id" = 72[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=287&y=64&z=15&_=]
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:15:22) [GET]
+  Parameters: {"file_id"=>"10", "id"=>"72"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 10 AND ("note_files".note_id = 72)) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/10]
+Streaming file /Users/will/workspace/notable/files/will/72/README.pdf
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:15:30) [GET]
+  Parameters: {"x"=>"671", "y"=>"77", "z"=>"16", "id"=>"72", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 77, "x" = 671, "z" = 16 WHERE "id" = 72[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=671&y=77&z=16&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:15:31) [GET]
+  Parameters: {"x"=>"257", "y"=>"122", "z"=>"17", "id"=>"73", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE "notes" SET "y" = 122, "x" = 257, "z" = 17 WHERE "id" = 73[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=257&y=122&z=17&_=]
+
+
+Processing NotesController#add_tag (for 127.0.0.1 at 2008-12-24 16:15:40) [POST]
+  Parameters: {"id"=>"72", "value"=>"pictures cheatsheets"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+  [4;36;1mTagging Load (0.1ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ( taggable_id = 72 and taggable_type = 'Note' and user_id = 2) [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'pictures' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;36;1mTag Create (0.3ms)[0m   [0;1mINSERT INTO "tags" ("name", "color", "user_id") VALUES('pictures', 'yellow', 2)[0m
+  [4;35;1mTagging Create (0.1ms)[0m   [0mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(39, 'Note', 72, 2)[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'cheatsheets' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "color", "user_id") VALUES('cheatsheets', 'yellow', 2)[0m
+  [4;36;1mTagging Create (0.1ms)[0m   [0;1mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(40, 'Note', 72, 2)[0m
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mNote Load (0.6ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+Completed in 28ms (View: 6, DB: 3) | 200 OK [http://localhost/notes/add_tag/72]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:15:45) [GET]
+  Parameters: {"x"=>"259", "y"=>"122", "z"=>"18", "id"=>"73", "_"=>""}
+  [4;35;1mNote Load (0.4ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "x" = 259, "z" = 18 WHERE "id" = 73[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 18ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=259&y=122&z=18&_=]
+
+
+Processing NotesController#add_tag (for 127.0.0.1 at 2008-12-24 16:15:47) [POST]
+  Parameters: {"id"=>"73", "value"=>"pictures"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 73) [0m
+  [4;35;1mTagging Load (0.1ms)[0m   [0mSELECT * FROM "taggings" WHERE ( taggable_id = 73 and taggable_type = 'Note' and user_id = 2) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'pictures' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;35;1mTagging Create (0.3ms)[0m   [0mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(39, 'Note', 73, 2)[0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;35;1mNote Load (0.6ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+Completed in 95ms (View: 7, DB: 3) | 200 OK [http://localhost/notes/add_tag/73]
+
+
+Processing NotesController#search_by_tag (for 127.0.0.1 at 2008-12-24 16:15:51) [GET]
+  Parameters: {"tag_search"=>"cheatsheets"}
+  [4;36;1mNote Load (0.9ms)[0m   [0;1mSELECT notes.* FROM notes, tags, taggings WHERE notes.id = taggings.taggable_id AND taggings.user_id = 2 AND taggings.taggable_type = 'Note' AND taggings.tag_id = tags.id AND tags.name IN ('cheatsheets')[0m
+Rendering template within layouts/notes
+Rendering notes/search_by_tag
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mNoteFile Load (0.6ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) [0m
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (0.9ms)
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (22.0ms)
+Completed in 74ms (View: 66, DB: 1) | 200 OK [http://localhost/tag/cheatsheets]
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:15:51) [GET]
+  Parameters: {"file_id"=>"9", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.4ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.4ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 9 AND ("note_files".note_id = 72)) [0m
+Completed in 18ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/9?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_6.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:15:52) [GET]
+  Parameters: {"file_id"=>"7", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.6ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 7 AND ("note_files".note_id = 72)) [0m
+Completed in 20ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/7?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_4.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:15:52) [GET]
+  Parameters: {"file_id"=>"8", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 8 AND ("note_files".note_id = 72)) [0m
+Completed in 91ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/8?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_2.jpg
+
+
+Processing NotesController#index (for 127.0.0.1 at 2008-12-24 16:15:54) [GET]
+  [4;35;1mNote Load (0.9ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".user_id = 2) ORDER BY date desc, id desc[0m
+Rendering template within layouts/notes
+Rendering notes/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.8ms)
+Rendered notes/_note_listing (13.1ms)
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;35;1mNoteFile Load (0.5ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) [0m
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (0.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (0.8ms)
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (12.9ms)
+Completed in 43ms (View: 34, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:15:54) [GET]
+  Parameters: {"file_id"=>"7", "type"=>"thumb", "id"=>"72"}
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNoteFile Load (0.4ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files"."id" = 7 AND ("note_files".note_id = 72)) [0m
+Completed in 18ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/7?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_4.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:15:55) [GET]
+  Parameters: {"file_id"=>"8", "type"=>"thumb", "id"=>"72"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNoteFile Load (0.3ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files"."id" = 8 AND ("note_files".note_id = 72)) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/8?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_2.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:15:55) [GET]
+  Parameters: {"file_id"=>"9", "type"=>"thumb", "id"=>"72"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNoteFile Load (0.3ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files"."id" = 9 AND ("note_files".note_id = 72)) [0m
+Completed in 18ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/9?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_6.jpg
+
+
+Processing NotesController#search_by_tag (for 127.0.0.1 at 2008-12-24 16:15:56) [GET]
+  Parameters: {"tag_search"=>"pictures"}
+  [4;36;1mNote Load (0.9ms)[0m   [0;1mSELECT notes.* FROM notes, tags, taggings WHERE notes.id = taggings.taggable_id AND taggings.user_id = 2 AND taggings.taggable_type = 'Note' AND taggings.tag_id = tags.id AND tags.name IN ('pictures')[0m
+Rendering template within layouts/notes
+Rendering notes/search_by_tag
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mNoteFile Load (0.5ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) [0m
+  [4;35;1mNote Load (0.4ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (0.9ms)
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (22.2ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;36;1mNoteFile Load (0.1ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (4.4ms)
+Completed in 43ms (View: 35, DB: 1) | 200 OK [http://localhost/tag/pictures]
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:15:56) [GET]
+  Parameters: {"file_id"=>"8", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.4ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.4ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 8 AND ("note_files".note_id = 72)) [0m
+Completed in 19ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/8?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_2.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:15:56) [GET]
+  Parameters: {"file_id"=>"7", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 7 AND ("note_files".note_id = 72)) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/7?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_4.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:15:56) [GET]
+  Parameters: {"file_id"=>"9", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 9 AND ("note_files".note_id = 72)) [0m
+Completed in 17ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/9?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_6.jpg
+
+
+Processing AccountController#settings (for 127.0.0.1 at 2008-12-24 16:16:00) [GET]
+Rendering template within layouts/settings
+Rendering account/settings
+  [4;35;1mTag Load (1.1ms)[0m   [0mSELECT DISTINCT tags.* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".user_id = 2)) [0m
+  [4;36;1mTagging Load (0.6ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 39) [0m
+  [4;35;1mTagging Load (0.7ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 40) [0m
+Completed in 66ms (View: 61, DB: 2) | 200 OK [http://localhost/account/settings]
+
+
+Processing AccountController#update_color (for 127.0.0.1 at 2008-12-24 16:16:05) [POST]
+  Parameters: {"tag_id"=>"40", "tag"=>{"color"=>"green"}}
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = '40') LIMIT 1[0m
+  [4;35;1mTag Update (0.3ms)[0m   [0mUPDATE "tags" SET "color" = 'green' WHERE "id" = 40[0m
+Redirected to actionsettings
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/account/update_color?tag_id=40]
+
+
+Processing AccountController#settings (for 127.0.0.1 at 2008-12-24 16:16:05) [GET]
+Rendering template within layouts/settings
+Rendering account/settings
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT DISTINCT tags.* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".user_id = 2)) [0m
+  [4;35;1mTagging Load (0.3ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 39) [0m
+  [4;36;1mTagging Load (0.2ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 40) [0m
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/account/settings]
+
+
+Processing AccountController#update_color (for 127.0.0.1 at 2008-12-24 16:16:09) [POST]
+  Parameters: {"tag_id"=>"39", "tag"=>{"color"=>"red"}}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = '39') LIMIT 1[0m
+  [4;36;1mTag Update (0.3ms)[0m   [0;1mUPDATE "tags" SET "color" = 'red' WHERE "id" = 39[0m
+Redirected to actionsettings
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/account/update_color?tag_id=39]
+
+
+Processing AccountController#settings (for 127.0.0.1 at 2008-12-24 16:16:09) [GET]
+Rendering template within layouts/settings
+Rendering account/settings
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT DISTINCT tags.* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".user_id = 2)) [0m
+  [4;36;1mTagging Load (0.3ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 39) [0m
+  [4;35;1mTagging Load (0.3ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 40) [0m
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/account/settings]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2008-12-24 16:16:11) [GET]
+  [4;36;1mNote Load (0.8ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".user_id = 2) ORDER BY date desc, id desc[0m
+Rendering template within layouts/notes
+Rendering notes/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (13.6ms)
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mNoteFile Load (0.5ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) [0m
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (0.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (0.8ms)
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (12.4ms)
+Completed in 43ms (View: 35, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:16:11) [GET]
+  Parameters: {"file_id"=>"7", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.4ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.5ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 7 AND ("note_files".note_id = 72)) [0m
+Completed in 19ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/7?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_4.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:16:11) [GET]
+  Parameters: {"file_id"=>"8", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 8 AND ("note_files".note_id = 72)) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/8?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_2.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:16:11) [GET]
+  Parameters: {"file_id"=>"9", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 9 AND ("note_files".note_id = 72)) [0m
+Completed in 89ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/9?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_6.jpg
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:16:14) [GET]
+  Parameters: {"x"=>"160", "y"=>"98", "z"=>"19", "id"=>"73", "_"=>""}
+  [4;35;1mNote Load (0.4ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.4ms)[0m   [0;1mUPDATE "notes" SET "y" = 98, "x" = 160, "z" = 19 WHERE "id" = 73[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=160&y=98&z=19&_=]
+
+
+Processing NotesController#add_tag (for 127.0.0.1 at 2008-12-24 16:16:21) [POST]
+  Parameters: {"id"=>"72", "value"=>"cheatsheets"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+  [4;35;1mTagging Load (0.4ms)[0m   [0mSELECT * FROM "taggings" WHERE ( taggable_id = 72 and taggable_type = 'Note' and user_id = 2) [0m
+  [4;36;1mTagging Destroy (0.5ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 67[0m
+  [4;35;1mTagging Destroy (0.1ms)[0m   [0mDELETE FROM "taggings" WHERE "id" = 68[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'cheatsheets' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;35;1mTagging Create (0.1ms)[0m   [0mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(40, 'Note', 72, 2)[0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;35;1mNote Load (0.7ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+Completed in 23ms (View: 7, DB: 3) | 200 OK [http://localhost/notes/add_tag/72]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2008-12-24 16:16:22) [GET]
+  [4;36;1mNote Load (236.6ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".user_id = 2) ORDER BY date desc, id desc[0m
+Rendering template within layouts/notes
+Rendering notes/index
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (15.8ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mNoteFile Load (0.5ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) [0m
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (0.9ms)
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (12.3ms)
+Completed in 282ms (View: 39, DB: 237) | 200 OK [http://localhost/]
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:16:23) [GET]
+  Parameters: {"file_id"=>"7", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 7 AND ("note_files".note_id = 72)) [0m
+Completed in 17ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/7?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_4.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:16:23) [GET]
+  Parameters: {"file_id"=>"9", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 9 AND ("note_files".note_id = 72)) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/9?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_6.jpg
+
+
+Processing NotesController#get_file (for 127.0.0.1 at 2008-12-24 16:16:23) [GET]
+  Parameters: {"file_id"=>"8", "type"=>"thumb", "id"=>"72"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 8 AND ("note_files".note_id = 72)) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/file/72/8?type=thumb]
+Streaming file /Users/will/workspace/notable/files/will/72/thumb_Photo_2.jpg
+
+
+Processing NotesController#delete_file (for 127.0.0.1 at 2008-12-24 16:16:26) [POST]
+  Parameters: {"id"=>"72", "note_file_id"=>"9"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.4ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 9 AND ("note_files".note_id = 72)) [0m
+  [4;35;1mNoteFile Destroy (0.3ms)[0m   [0mDELETE FROM "note_files" WHERE "id" = 9[0m
+Redirected to actionhome
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/notes/delete_file/72?note_file_id=9]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:16:26) [GET]
+  Parameters: {"x"=>"672", "y"=>"77", "z"=>"20", "id"=>"72", "_"=>""}
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE "notes" SET "x" = 672, "z" = 20 WHERE "id" = 72[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 98ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=672&y=77&z=20&_=]
+
+
+Processing NotesController#home (for 127.0.0.1 at 2008-12-24 16:16:26) [GET]
+Rendering notes/home
+Completed in 40ms (View: 1, DB: 0) | 200 OK [http://localhost/notes/home]
+
+
+Processing NotesController#delete_file (for 127.0.0.1 at 2008-12-24 16:16:28) [POST]
+  Parameters: {"id"=>"72", "note_file_id"=>"8"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files"."id" = 8 AND ("note_files".note_id = 72)) [0m
+  [4;35;1mNoteFile Destroy (0.3ms)[0m   [0mDELETE FROM "note_files" WHERE "id" = 8[0m
+Redirected to actionhome
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/notes/delete_file/72?note_file_id=8]
+
+
+Processing NotesController#home (for 127.0.0.1 at 2008-12-24 16:16:28) [GET]
+Rendering notes/home
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/notes/home]
+
+
+Processing NotesController#delete_file (for 127.0.0.1 at 2008-12-24 16:16:30) [POST]
+  Parameters: {"id"=>"72", "note_file_id"=>"7"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNoteFile Load (0.3ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files"."id" = 7 AND ("note_files".note_id = 72)) [0m
+  [4;36;1mNoteFile Destroy (0.3ms)[0m   [0;1mDELETE FROM "note_files" WHERE "id" = 7[0m
+Redirected to actionhome
+Completed in 20ms (DB: 1) | 302 Found [http://localhost/notes/delete_file/72?note_file_id=7]
+
+
+Processing NotesController#home (for 127.0.0.1 at 2008-12-24 16:16:30) [GET]
+Rendering notes/home
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/notes/home]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:16:34) [GET]
+  Parameters: {"x"=>"491", "y"=>"148", "z"=>"21", "id"=>"72", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (156.9ms)[0m   [0;1mUPDATE "notes" SET "y" = 148, "x" = 491, "z" = 21 WHERE "id" = 72[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 174ms (View: 0, DB: 158) | 200 OK [http://localhost/notes/update_position/72?x=491&y=148&z=21&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:16:36) [GET]
+  Parameters: {"x"=>"847", "y"=>"47", "z"=>"22", "id"=>"73", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE "notes" SET "y" = 47, "x" = 847, "z" = 22 WHERE "id" = 73[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=847&y=47&z=22&_=]
+
+
+Processing NotesController#new (for 127.0.0.1 at 2008-12-24 16:16:38) [POST]
+  [4;35;1mNote Create (0.4ms)[0m   [0mINSERT INTO "notes" ("x", "date", "y", "z", "description", "color", "user_id", "favorite") VALUES(NULL, '2008-12-24 16:16:38', NULL, NULL, NULL, NULL, 2, NULL)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 75) [0m
+Rendered notes/_file_upload_control (0.8ms)
+Rendered notes/_note_listing (13.4ms)
+Completed in 38ms (View: 20, DB: 1) | 200 OK [http://localhost/notes/new]
+
+
+Processing NotesController#get_descr (for 127.0.0.1 at 2008-12-24 16:16:40) [POST]
+  Parameters: {"id"=>"75"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 75 AND ("notes".user_id = 2)) [0m
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://localhost/notes/get_descr/75]
+
+
+Processing NotesController#update_descr (for 127.0.0.1 at 2008-12-24 16:16:58) [POST]
+  Parameters: {"id"=>"75", "value"=>"groceries\n\n*chicken breast\n*sage\n*chicken broth"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 75 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.4ms)[0m   [0mUPDATE "notes" SET "description" = 'groceries
+
+*chicken breast
+*sage
+*chicken broth' WHERE "id" = 75[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 18ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_descr/75]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:17:01) [GET]
+  Parameters: {"x"=>"105", "y"=>"181", "z"=>"23", "id"=>"75", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 75 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 181, "x" = 105, "z" = 23 WHERE "id" = 75[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 14ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/75?x=105&y=181&z=23&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:17:11) [GET]
+  Parameters: {"x"=>"490", "y"=>"350", "z"=>"24", "id"=>"75", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 75 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE "notes" SET "y" = 350, "x" = 490, "z" = 24 WHERE "id" = 75[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/75?x=490&y=350&z=24&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:17:24) [GET]
+  Parameters: {"x"=>"822", "y"=>"146", "z"=>"25", "id"=>"73", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 146, "x" = 822, "z" = 25 WHERE "id" = 73[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 14ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=822&y=146&z=25&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:17:25) [GET]
+  Parameters: {"x"=>"821", "y"=>"149", "z"=>"26", "id"=>"73", "_"=>""}
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE "notes" SET "y" = 149, "x" = 821, "z" = 26 WHERE "id" = 73[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 101ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=821&y=149&z=26&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:17:27) [GET]
+  Parameters: {"x"=>"820", "y"=>"148", "z"=>"27", "id"=>"73", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.4ms)[0m   [0;1mUPDATE "notes" SET "y" = 148, "x" = 820, "z" = 27 WHERE "id" = 73[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=820&y=148&z=27&_=]
+
+
+Processing NotesController#add_tag (for 127.0.0.1 at 2008-12-24 16:17:34) [POST]
+  Parameters: {"id"=>"75", "value"=>"lists"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 75) [0m
+  [4;35;1mTagging Load (0.1ms)[0m   [0mSELECT * FROM "taggings" WHERE ( taggable_id = 75 and taggable_type = 'Note' and user_id = 2) [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'lists' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;35;1mTag Create (0.3ms)[0m   [0mINSERT INTO "tags" ("name", "color", "user_id") VALUES('lists', 'yellow', 2)[0m
+  [4;36;1mTagging Create (0.1ms)[0m   [0;1mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(41, 'Note', 75, 2)[0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;36;1mNote Load (0.8ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+Completed in 24ms (View: 7, DB: 3) | 200 OK [http://localhost/notes/add_tag/75]
+
+
+Processing NotesController#search_by_tag (for 127.0.0.1 at 2008-12-24 16:17:36) [GET]
+  Parameters: {"tag_search"=>"lists"}
+  [4;36;1mNote Load (0.7ms)[0m   [0;1mSELECT notes.* FROM notes, tags, taggings WHERE notes.id = taggings.taggable_id AND taggings.user_id = 2 AND taggings.taggable_type = 'Note' AND taggings.tag_id = tags.id AND tags.name IN ('lists')[0m
+Rendering template within layouts/notes
+Rendering notes/search_by_tag
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 75) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (13.7ms)
+Completed in 29ms (View: 22, DB: 1) | 200 OK [http://localhost/tag/lists]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:19:52) [GET]
+  Parameters: {"x"=>"141", "y"=>"121", "z"=>"25", "id"=>"75", "_"=>""}
+  [4;35;1mNote Load (0.7ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 75 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.4ms)[0m   [0;1mUPDATE "notes" SET "y" = 121, "x" = 141, "z" = 25 WHERE "id" = 75[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 92ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/75?x=141&y=121&z=25&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:21:34) [GET]
+  Parameters: {"x"=>"632", "y"=>"104", "z"=>"26", "id"=>"75", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 75 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE "notes" SET "y" = 104, "x" = 632, "z" = 26 WHERE "id" = 75[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/75?x=632&y=104&z=26&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:21:40) [GET]
+  Parameters: {"x"=>"287", "y"=>"379", "z"=>"27", "id"=>"75", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 75 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 379, "x" = 287, "z" = 27 WHERE "id" = 75[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 18ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/75?x=287&y=379&z=27&_=]
+
+
+Processing NotesController#search_by_tag (for 127.0.0.1 at 2008-12-24 16:21:48) [GET]
+  Parameters: {"tag_search"=>"lists"}
+  [4;36;1mNote Load (0.7ms)[0m   [0;1mSELECT notes.* FROM notes, tags, taggings WHERE notes.id = taggings.taggable_id AND taggings.user_id = 2 AND taggings.taggable_type = 'Note' AND taggings.tag_id = tags.id AND tags.name IN ('lists')[0m
+Rendering template within layouts/notes
+Rendering notes/search_by_tag
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 75) [0m
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (12.7ms)
+Completed in 28ms (View: 21, DB: 1) | 200 OK [http://localhost/tag/lists]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2008-12-24 16:21:48) [GET]
+  [4;35;1mNote Load (0.9ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".user_id = 2) ORDER BY date desc, id desc[0m
+Rendering template within layouts/notes
+Rendering notes/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 75) [0m
+Rendered notes/_file_upload_control (75.6ms)
+Rendered notes/_note_listing (88.0ms)
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;35;1mNoteFile Load (0.1ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (4.7ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;35;1mNoteFile Load (0.3ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) [0m
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.6ms)
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (9.3ms)
+Completed in 119ms (View: 111, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing NotesController#new (for 127.0.0.1 at 2008-12-24 16:22:33) [POST]
+  [4;35;1mNote Create (0.4ms)[0m   [0mINSERT INTO "notes" ("x", "date", "y", "z", "description", "color", "user_id", "favorite") VALUES(NULL, '2008-12-24 16:22:33', NULL, NULL, NULL, NULL, 2, NULL)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 76) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (11.2ms)
+Completed in 35ms (View: 17, DB: 1) | 200 OK [http://localhost/notes/new]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:22:36) [GET]
+  Parameters: {"x"=>"51", "y"=>"100", "z"=>"28", "id"=>"76", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 76 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 100, "x" = 51, "z" = 28 WHERE "id" = 76[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/76?x=51&y=100&z=28&_=]
+
+
+Processing NotesController#get_descr (for 127.0.0.1 at 2008-12-24 16:22:36) [POST]
+  Parameters: {"id"=>"76"}
+  [4;36;1mNote Load (1.0ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 76 AND ("notes".user_id = 2)) [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/get_descr/76]
+
+
+Processing NotesController#update_descr (for 127.0.0.1 at 2008-12-24 16:22:39) [POST]
+  Parameters: {"id"=>"76", "value"=>"test"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 76 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "description" = 'test' WHERE "id" = 76[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 117ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_descr/76]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:22:41) [GET]
+  Parameters: {"x"=>"51", "y"=>"99", "z"=>"29", "id"=>"76", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 76 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.4ms)[0m   [0mUPDATE "notes" SET "y" = 99, "z" = 29 WHERE "id" = 76[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 26ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/76?x=51&y=99&z=29&_=]
+
+
+Processing NotesController#add_tag (for 127.0.0.1 at 2008-12-24 16:22:54) [POST]
+  Parameters: {"id"=>"76", "value"=>" tag1 tag2 tag3 pictures cheatsheets"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 76) [0m
+  [4;36;1mTagging Load (0.1ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ( taggable_id = 76 and taggable_type = 'Note' and user_id = 2) [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'tag1' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;36;1mTag Create (0.3ms)[0m   [0;1mINSERT INTO "tags" ("name", "color", "user_id") VALUES('tag1', 'yellow', 2)[0m
+  [4;35;1mTagging Create (0.1ms)[0m   [0mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(42, 'Note', 76, 2)[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'tag2' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "color", "user_id") VALUES('tag2', 'yellow', 2)[0m
+  [4;36;1mTagging Create (0.1ms)[0m   [0;1mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(43, 'Note', 76, 2)[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'tag3' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "color", "user_id") VALUES('tag3', 'yellow', 2)[0m
+  [4;35;1mTagging Create (0.1ms)[0m   [0mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(44, 'Note', 76, 2)[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'pictures' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;35;1mTagging Create (0.1ms)[0m   [0mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(39, 'Note', 76, 2)[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'cheatsheets' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;35;1mTagging Create (0.1ms)[0m   [0mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(40, 'Note', 76, 2)[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+  [4;35;1mNote Load (0.6ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+Completed in 30ms (View: 6, DB: 4) | 200 OK [http://localhost/notes/add_tag/76]
+
+
+Processing NotesController#new (for 127.0.0.1 at 2008-12-24 16:22:57) [POST]
+  [4;36;1mNote Create (0.4ms)[0m   [0;1mINSERT INTO "notes" ("x", "date", "y", "z", "description", "color", "user_id", "favorite") VALUES(NULL, '2008-12-24 16:22:57', NULL, NULL, NULL, NULL, 2, NULL)[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 77) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (10.6ms)
+Completed in 30ms (View: 15, DB: 1) | 200 OK [http://localhost/notes/new]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:22:59) [GET]
+  Parameters: {"x"=>"162", "y"=>"337", "z"=>"30", "id"=>"77", "_"=>""}
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 77 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.4ms)[0m   [0mUPDATE "notes" SET "y" = 337, "x" = 162, "z" = 30 WHERE "id" = 77[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 94ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/77?x=162&y=337&z=30&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:23:00) [GET]
+  Parameters: {"x"=>"161", "y"=>"338", "z"=>"31", "id"=>"77", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 77 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.4ms)[0m   [0;1mUPDATE "notes" SET "y" = 338, "x" = 161, "z" = 31 WHERE "id" = 77[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 18ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/77?x=161&y=338&z=31&_=]
+
+
+Processing NotesController#add_tag (for 127.0.0.1 at 2008-12-24 16:23:06) [POST]
+  Parameters: {"id"=>"77", "value"=>"tag1 pictures"}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 77) [0m
+  [4;35;1mTagging Load (0.1ms)[0m   [0mSELECT * FROM "taggings" WHERE ( taggable_id = 77 and taggable_type = 'Note' and user_id = 2) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'tag1' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;35;1mTagging Create (0.3ms)[0m   [0mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(42, 'Note', 77, 2)[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'pictures' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;35;1mTagging Create (0.1ms)[0m   [0mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(39, 'Note', 77, 2)[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+  [4;35;1mNote Load (1.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;35;1mTag Load (0.8ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+Completed in 30ms (View: 10, DB: 5) | 200 OK [http://localhost/notes/add_tag/77]
+
+
+Processing NotesController#search_by_tag (for 127.0.0.1 at 2008-12-24 16:23:11) [GET]
+  Parameters: {"tag_search"=>"tag2"}
+  [4;35;1mNote Load (0.8ms)[0m   [0mSELECT notes.* FROM notes, tags, taggings WHERE notes.id = taggings.taggable_id AND taggings.user_id = 2 AND taggings.taggable_type = 'Note' AND taggings.tag_id = tags.id AND tags.name IN ('tag2')[0m
+Rendering template within layouts/notes
+Rendering notes/search_by_tag
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 76) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (13.4ms)
+Completed in 30ms (View: 23, DB: 1) | 200 OK [http://localhost/tag/tag2]
+
+
+Processing NotesController#search_by_tag (for 127.0.0.1 at 2008-12-24 16:23:13) [GET]
+  Parameters: {"tag_search"=>"tag1"}
+  [4;36;1mNote Load (0.9ms)[0m   [0;1mSELECT notes.* FROM notes, tags, taggings WHERE notes.id = taggings.taggable_id AND taggings.user_id = 2 AND taggings.taggable_type = 'Note' AND taggings.tag_id = tags.id AND tags.name IN ('tag1')[0m
+Rendering template within layouts/notes
+Rendering notes/search_by_tag
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 76) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (89.5ms)
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+  [4;36;1mNoteFile Load (0.1ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 77) [0m
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (3.9ms)
+Completed in 110ms (View: 103, DB: 1) | 200 OK [http://localhost/tag/tag1]
+
+
+Processing NotesController#search_by_tag (for 127.0.0.1 at 2008-12-24 16:23:15) [GET]
+  Parameters: {"tag_search"=>"pictures"}
+  [4;35;1mNote Load (1.0ms)[0m   [0mSELECT notes.* FROM notes, tags, taggings WHERE notes.id = taggings.taggable_id AND taggings.user_id = 2 AND taggings.taggable_type = 'Note' AND taggings.tag_id = tags.id AND tags.name IN ('pictures')[0m
+Rendering template within layouts/notes
+Rendering notes/search_by_tag
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (13.1ms)
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+  [4;35;1mNoteFile Load (0.1ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 76) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (4.4ms)
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 77) [0m
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (3.6ms)
+Completed in 39ms (View: 31, DB: 1) | 200 OK [http://localhost/tag/pictures]
+
+
+Processing NotesController#new (for 127.0.0.1 at 2008-12-24 16:23:17) [POST]
+  [4;36;1mNote Create (0.4ms)[0m   [0;1mINSERT INTO "notes" ("x", "date", "y", "z", "description", "color", "user_id", "favorite") VALUES(NULL, '2008-12-24 16:23:17', NULL, NULL, NULL, NULL, 2, NULL)[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 78)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 78) [0m
+Rendered notes/_file_upload_control (1.1ms)
+Rendered notes/_note_listing (12.7ms)
+Completed in 36ms (View: 19, DB: 1) | 200 OK [http://localhost/notes/new]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:23:19) [GET]
+  Parameters: {"x"=>"50", "y"=>"99", "z"=>"32", "id"=>"78", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 78 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.4ms)[0m   [0mUPDATE "notes" SET "y" = 99, "x" = 50, "z" = 32 WHERE "id" = 78[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 20ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/78?x=50&y=99&z=32&_=]
+
+
+Processing NotesController#add_tag (for 127.0.0.1 at 2008-12-24 16:23:22) [POST]
+  Parameters: {"id"=>"78", "value"=>"pictures"}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 78) [0m
+  [4;36;1mTagging Load (0.1ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ( taggable_id = 78 and taggable_type = 'Note' and user_id = 2) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'pictures' AND "tags"."user_id" = 2) LIMIT 1[0m
+  [4;36;1mTagging Create (0.4ms)[0m   [0;1mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "user_id") VALUES(39, 'Note', 78, 2)[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 78)) [0m
+  [4;36;1mNote Load (1.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;35;1mTag Load (1.9ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;36;1mTag Load (0.8ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 78)) [0m
+Completed in 33ms (View: 12, DB: 7) | 200 OK [http://localhost/notes/add_tag/78]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:23:24) [GET]
+  Parameters: {"x"=>"412", "y"=>"114", "z"=>"33", "id"=>"78", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 78 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 114, "x" = 412, "z" = 33 WHERE "id" = 78[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 14ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/78?x=412&y=114&z=33&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:23:26) [GET]
+  Parameters: {"x"=>"327", "y"=>"286", "z"=>"34", "id"=>"77", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 77 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (64.6ms)[0m   [0mUPDATE "notes" SET "y" = 286, "x" = 327, "z" = 34 WHERE "id" = 77[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 80ms (View: 0, DB: 65) | 200 OK [http://localhost/notes/update_position/77?x=327&y=286&z=34&_=]
+
+
+Processing NotesController#search_by_tag (for 127.0.0.1 at 2008-12-24 16:23:28) [GET]
+  Parameters: {"tag_search"=>"pictures"}
+  [4;35;1mNote Load (1.0ms)[0m   [0mSELECT notes.* FROM notes, tags, taggings WHERE notes.id = taggings.taggable_id AND taggings.user_id = 2 AND taggings.taggable_type = 'Note' AND taggings.tag_id = tags.id AND tags.name IN ('pictures')[0m
+Rendering template within layouts/notes
+Rendering notes/search_by_tag
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (14.4ms)
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 76) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (4.6ms)
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+  [4;35;1mNoteFile Load (0.1ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 77) [0m
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (3.5ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 78)) [0m
+  [4;35;1mNoteFile Load (0.1ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 78) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (3.5ms)
+Completed in 43ms (View: 35, DB: 1) | 200 OK [http://localhost/tag/pictures]
+
+
+Processing NotesController#search_by_tag (for 127.0.0.1 at 2008-12-24 16:23:29) [GET]
+  Parameters: {"tag_search"=>"pictures"}
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT notes.* FROM notes, tags, taggings WHERE notes.id = taggings.taggable_id AND taggings.user_id = 2 AND taggings.taggable_type = 'Note' AND taggings.tag_id = tags.id AND tags.name IN ('pictures')[0m
+Rendering template within layouts/notes
+Rendering notes/search_by_tag
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.9ms)
+Rendered notes/_note_listing (13.4ms)
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+  [4;36;1mNoteFile Load (0.1ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 76) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (4.6ms)
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 77) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (4.0ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 78)) [0m
+  [4;36;1mNoteFile Load (0.1ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 78) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (3.7ms)
+Completed in 43ms (View: 35, DB: 1) | 200 OK [http://localhost/tag/pictures]
+
+
+Processing NotesController#destroy (for 127.0.0.1 at 2008-12-24 16:23:32) [POST]
+  Parameters: {"id"=>"76"}
+  [4;35;1mNote Load (0.9ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;36;1mNote Load (0.4ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 76 AND ("notes".user_id = 2)) [0m
+  [4;35;1mTagging Load (0.6ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".taggable_id = 76 AND "taggings".taggable_type = 'Note') [0m
+  [4;36;1mTagging Destroy (0.3ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 72[0m
+  [4;35;1mTagging Destroy (0.1ms)[0m   [0mDELETE FROM "taggings" WHERE "id" = 73[0m
+  [4;36;1mTagging Destroy (0.1ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 74[0m
+  [4;35;1mTagging Destroy (0.1ms)[0m   [0mDELETE FROM "taggings" WHERE "id" = 75[0m
+  [4;36;1mTagging Destroy (0.1ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 76[0m
+  [4;35;1mNoteFile Load (0.1ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 76) [0m
+  [4;36;1mNote Destroy (0.1ms)[0m   [0;1mDELETE FROM "notes" WHERE "id" = 76[0m
+  [4;35;1mTagging Destroy (0.1ms)[0m   [0mDELETE FROM "taggings" WHERE "id" = 72[0m
+  [4;36;1mTagging Destroy (0.1ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 73[0m
+  [4;35;1mTagging Destroy (0.1ms)[0m   [0mDELETE FROM "taggings" WHERE "id" = 74[0m
+  [4;36;1mTagging Destroy (0.1ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 75[0m
+  [4;35;1mTagging Destroy (0.1ms)[0m   [0mDELETE FROM "taggings" WHERE "id" = 76[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 76)) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 78)) [0m
+Completed in 40ms (View: 6, DB: 6) | 200 OK [http://localhost/notes/destroy/76]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:23:34) [GET]
+  Parameters: {"x"=>"412", "y"=>"118", "z"=>"35", "id"=>"78", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 78 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.5ms)[0m   [0;1mUPDATE "notes" SET "y" = 118, "z" = 35 WHERE "id" = 78[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/78?x=412&y=118&z=35&_=]
+
+
+Processing NotesController#destroy (for 127.0.0.1 at 2008-12-24 16:23:35) [POST]
+  Parameters: {"id"=>"78"}
+  [4;36;1mNote Load (0.8ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 78 AND ("notes".user_id = 2)) [0m
+  [4;36;1mTagging Load (0.3ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ("taggings".taggable_id = 78 AND "taggings".taggable_type = 'Note') [0m
+  [4;35;1mTagging Destroy (0.3ms)[0m   [0mDELETE FROM "taggings" WHERE "id" = 79[0m
+  [4;36;1mNoteFile Load (0.1ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 78) [0m
+  [4;35;1mNote Destroy (0.1ms)[0m   [0mDELETE FROM "notes" WHERE "id" = 78[0m
+  [4;36;1mTagging Destroy (0.1ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 79[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 78)) [0m
+Completed in 30ms (View: 6, DB: 4) | 200 OK [http://localhost/notes/destroy/78]
+
+
+Processing NotesController#destroy (for 127.0.0.1 at 2008-12-24 16:23:38) [POST]
+  Parameters: {"id"=>"77"}
+  [4;35;1mNote Load (0.6ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".user_id = 2) [0m
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 77 AND ("notes".user_id = 2)) [0m
+  [4;35;1mTagging Load (0.3ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".taggable_id = 77 AND "taggings".taggable_type = 'Note') [0m
+  [4;36;1mTagging Destroy (0.3ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 77[0m
+  [4;35;1mTagging Destroy (0.1ms)[0m   [0mDELETE FROM "taggings" WHERE "id" = 78[0m
+  [4;36;1mNoteFile Load (0.1ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 77) [0m
+  [4;35;1mNote Destroy (0.1ms)[0m   [0mDELETE FROM "notes" WHERE "id" = 77[0m
+  [4;36;1mTagging Destroy (0.1ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 77[0m
+  [4;35;1mTagging Destroy (0.1ms)[0m   [0mDELETE FROM "taggings" WHERE "id" = 78[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 77)) [0m
+Completed in 29ms (View: 5, DB: 4) | 200 OK [http://localhost/notes/destroy/77]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2008-12-24 16:23:41) [GET]
+  [4;35;1mNote Load (0.9ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes".user_id = 2) ORDER BY date desc, id desc[0m
+Rendering template within layouts/notes
+Rendering notes/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 75) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (12.7ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;35;1mNoteFile Load (0.1ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (4.3ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;35;1mNoteFile Load (0.2ms)[0m   [0mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) [0m
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.5ms)
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (8.4ms)
+Completed in 43ms (View: 35, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:23:47) [GET]
+  Parameters: {"x"=>"220", "y"=>"131", "z"=>"28", "id"=>"72", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.3ms)[0m   [0;1mUPDATE "notes" SET "y" = 131, "x" = 220, "z" = 28 WHERE "id" = 72[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 16ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=220&y=131&z=28&_=]
+
+
+Processing NotesController#index (for 127.0.0.1 at 2008-12-24 16:23:48) [GET]
+  [4;36;1mNote Load (0.9ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes".user_id = 2) ORDER BY date desc, id desc[0m
+Rendering template within layouts/notes
+Rendering notes/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 75)) [0m
+  [4;36;1mNoteFile Load (0.2ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 75) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (13.8ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 73)) [0m
+  [4;36;1mNoteFile Load (0.1ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 73) [0m
+Rendered notes/_file_upload_control (0.7ms)
+Rendered notes/_note_listing (4.4ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN taggings ON tags.id = taggings.tag_id WHERE (("taggings".taggable_type = 'Note') AND ("taggings".taggable_id = 72)) [0m
+  [4;36;1mNoteFile Load (0.3ms)[0m   [0;1mSELECT * FROM "note_files" WHERE ("note_files".note_id = 72) [0m
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72) [0m
+Rendered notes/_file_listing (1.5ms)
+Rendered notes/_file_upload_control (0.6ms)
+Rendered notes/_note_listing (8.8ms)
+Completed in 125ms (View: 38, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:25:44) [GET]
+  Parameters: {"x"=>"615", "y"=>"139", "z"=>"29", "id"=>"73", "_"=>""}
+  [4;36;1mNote Load (0.3ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 73 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE "notes" SET "y" = 139, "x" = 615, "z" = 29 WHERE "id" = 73[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 14ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/73?x=615&y=139&z=29&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:25:50) [GET]
+  Parameters: {"x"=>"287", "y"=>"139", "z"=>"30", "id"=>"72", "_"=>""}
+  [4;35;1mNote Load (0.3ms)[0m   [0mSELECT * FROM "notes" WHERE ("notes"."id" = 72 AND ("notes".user_id = 2)) [0m
+  [4;36;1mNote Update (0.4ms)[0m   [0;1mUPDATE "notes" SET "y" = 139, "x" = 287, "z" = 30 WHERE "id" = 72[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/72?x=287&y=139&z=30&_=]
+
+
+Processing NotesController#update_position (for 127.0.0.1 at 2008-12-24 16:26:21) [GET]
+  Parameters: {"x"=>"287", "y"=>"333", "z"=>"31", "id"=>"75", "_"=>""}
+  [4;36;1mNote Load (0.5ms)[0m   [0;1mSELECT * FROM "notes" WHERE ("notes"."id" = 75 AND ("notes".user_id = 2)) [0m
+  [4;35;1mNote Update (0.3ms)[0m   [0mUPDATE "notes" SET "y" = 333, "z" = 31 WHERE "id" = 75[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/notes/update_position/75?x=287&y=333&z=31&_=]
